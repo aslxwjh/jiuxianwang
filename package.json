@@ -1,0 +1,22 @@
+{
+  "name": "jiuxianwang",
+  "version": "1.0.0",
+  "description": "酒仙网",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "wjh",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^3.12.0"
+  }
+}

@@ -1,0 +1,306 @@
+//@import 'public';
+//#div{
+//  width: 200px;
+//  height:200px;  
+//}
+//
+//header{
+//  width: 200px;
+//  height: 800px;
+//  nav{
+//      width: 200px;
+//      height:300px;
+//      background: red;
+//      a{
+//          color:red;
+//      }
+//  }
+//}
+//#{$fontSize} //以属性引用时
+//li:solid 2px red; //列表 
+//padding(10px 5px)(5px 5px);//列表  数组只用来存放数据 怎么引用都可以
+//
+//$map:(key1:value,key2:value)//带名称的列表
+//$if 
+//$else if
+//$for from to/through 
+//$each in
+//
+//#box{
+//  @include mysize(100px,100px);//调用@mixin
+//}
+//#box1{
+//  @extend #box;//继承
+//}
+//
+////函数
+@import 'public';
+body,p,h3,ul,input,ol{ margin: 0; padding: 0;};
+li{list-style: none;}
+a{text-decoration: none;}
+img{display: block;}
+#topHeader{
+    width: 100%;
+    height: 40px;
+    background: #f2f2f2;
+    .topHeaderCon{
+        line-height: 40px;
+        text-align: center;
+        width: 1200px;
+        //margin: 0 auto;           
+        .topHeaderLeft{
+            font-size: $fontSize;
+            
+            p{
+                color :#a699a6; 
+                margin-right: 14px;
+                float:left;
+            }          
+            a{
+              margin-right: 5px;
+              float:left;
+              color :#a699a6;  
+            }
+        } 
+        .topHeaderRight{
+            
+            float: right;
+            ul{
+              li{
+                font-size: $fontSize;
+                float: left;
+                padding: 0 5px;
+                a{
+                  color :#a699a6;
+                }   
+            }
+             
+            }            
+        } 
+    }
+} 
+
+.banner{  
+    img{
+        width: 100%;
+        height: 90px;
+        
+    } 
+}
+
+.search{   
+    height: 95px;
+   
+    .search-center{
+        display: flex;
+        padding-left: 31px;
+    /*   border: 1px solid red; */
+        height: 66px;
+        margin-top: 30px;
+        
+        .searchbox{
+            margin-left: 7px;
+            
+            margin-right: 20px;
+            .search-main{     
+                          
+                width: 538px;
+                height: 35px;
+                //border: 2px solid red;
+                #search-text{
+                    float: left;
+                    width: 450px;
+                    height: 31px;
+                    outline: none;
+                    border: 2px solid red;
+                }
+                #search-btn{
+                    width: 77px;
+                    height: 35px;
+                    background: red;
+                    border: 0;
+                    outline: none;
+                   
+                    color : white;
+                }
+            }
+            ul{
+                
+                li{
+                    margin: 7px 0;
+                    padding: 0 7px;
+                    font-size: $fontSize;
+                    float: left;
+                    border-right: 1px solid #a193a0;
+                    }
+                li:last-child{
+                    border-right: none;
+                    }
+                
+                }
+        }
+        .searchImgLeft{
+            
+           width: 260px;
+           height: 65px;
+           //border: 1px solid red;
+           display: flex;
+           img{
+            margin-right: 13px;
+            display: inline;
+            }
+        }
+        .searchImgRight{
+            display: flex;
+            width: 222px;
+            height: 44px;
+            //border: 1px solid red;
+            img{
+            margin-right: 13px;
+            display: inline;
+            }
+        }
+    }    
+}
+.search-box:after{content:"";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.search-box{zoom:1;}
+
+//bigBanner
+.bigBanner{
+    
+    .bigBannerTop{
+        height: 34px;
+        background: #990100;
+        color: white;
+        line-height: 34px;
+       // border: 1px solid red;
+        .bigBannerNav{
+            width: 1200px;
+           // border: 1px solid blue;
+            height: 34px;
+            text-align: center;
+            vertical-align: middle;
+            margin: 0 32px;
+            .bigBannerNav-L{
+         //       border: 1px solid green;
+                float: left;
+                width: 190px;
+                height: 34px;
+                background: red;
+            }
+            .bigBannerNav-C{
+                width: 860px;
+                height: 34px;
+                float: left;
+                ul{
+                    
+                    li{
+                        padding: 0 22px;
+                        float: left;
+                    }
+                }
+            }
+            .bigBannerNav-R{
+                height: 34px;
+                float: right;
+                
+            }
+        }
+    }
+    .bigBannerBody{
+        width: 100%;
+        height: 470px;
+       
+        position: relative;
+        ul{
+            li{
+                height: 470px;
+                
+                a{                   
+                    display: block;        
+                }
+            }
+        }
+        ol{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            background: rgba(255,255,255,0);
+            border-radius: 7px;
+            padding: 3px;
+            z-index: 2;
+            li{
+                
+                float: left;
+                width: 15px;
+                height: 15px;
+                margin-left: 5px;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                margin-right: 7px;
+                font-size: $fontSize;
+                text-align: center;
+                background: black;
+                color: white;
+                
+            }
+        }
+        
+        
+        
+        #msg{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            text-indent: 10px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            color: white;
+            font-size: 16px;
+            background: rgba(0,0,0,0);
+            cursor: pointer;
+            z-index: 1;
+        }
+
+    }
+}
+
+
+//酒类详情
+.particular{
+    margin-top: 10px;
+    height: 500px;
+    border: 1px solid red;
+    .particularLeft{
+        width: 920px;
+        height: 498px;
+        border: 1px solid blue;
+        .particularLeft-top{
+            height: 34px;
+            width: 920px;
+            line-height: 34px;
+            
+            ul{
+                
+               
+                li{
+                    line-height: 34px;
+                   // border: 1px solid green;
+                    width: 183px;
+                    height: 34px;
+                    text-align: center;
+                    color: #626461;
+                    float: left;
+                    background: #f9f9f9;
+                    font-size: 14px;
+                    border-top: 2px solid #ededed;
+                    border-right: 1px solid #ededed;
+                    
+                }
+            }
+        }
+    }
+    
+}
