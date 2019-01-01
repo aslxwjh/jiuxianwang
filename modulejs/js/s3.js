@@ -1,4 +1,3 @@
-
 /*
 	一、 创建元素
 		1. 左右按钮  span    #ltBtn  #rtBtn
@@ -23,7 +22,12 @@
 		
 	获取byId
 	创建元素
+	
 */
+
+
+new Slider("particularRight-center");
+new Slider("particularRight-bottom");
 function Slider(id) {
 	    //属性
 		this.ele = $(id); //获取大盒子
@@ -33,16 +37,7 @@ function Slider(id) {
 		this.num = this.oUllis.length;
 		
 		this.createEle = function(){
-			//创建左按钮
-			let oLtbtn = $create('span');
-			oLtbtn.innerHTML = '&lt;';
-			oLtbtn.id = 'ltBtn';
-			this.ele.appendChild(oLtbtn);
-			//创建右按钮
-			let oRtBtn = $create('span');
-			oRtBtn.innerHTML = '&gt;';
-			oRtBtn.id = 'rtBtn';
-			this.ele.appendChild(oRtBtn);
+			
 			//创建ol
 			let ol = $create('ol');
 			//创建一个放li的数组
@@ -50,6 +45,7 @@ function Slider(id) {
 			for(let i = 0;i < this.num;i ++){
 				let li = $create('li');
 				ol.appendChild(li);
+				//li.innerHTML=i+1;
 				arr.push(li);
 			}
 			this.ele.appendChild(ol);
@@ -69,38 +65,22 @@ function Slider(id) {
 				//所有大图隐藏
 				this.oUllis[i].style.display = 'none';
 				//所有小圆点红色
-				this.oOllis[i].style.background = 'red';
+				this.oOllis[i].style.background = 'black';
 			}
 			//当前大图显示
 			this.oUllis[this.indexA].style.display = 'block';
 			//当前小圆点蓝色
-			this.oOllis[this.indexA].style.background = 'blue';
+			this.oOllis[this.indexA].style.background = 'red';
 			//文字信息
 			this.div = $('msg'); //获取文字信息的div
-			//添加文字信息
-			this.div.innerHTML = this.oUllis[this.indexA].firstElementChild.firstElementChild.alt;
+			
 		}
 		//设置当前轮播图片的下标 
 		this.indexA = 0;
 		this.slide();
 		
 		this.addEvent = function(){
-			//给左按钮添加点击事件
-			this.ltBtn.onclick = function(){
-				this.indexA --;
-				if(this.indexA == -1){
-					this.indexA = this.num - 1;
-				}
-				this.slide();
-			}.bind(this);
-			//给右按钮添加点击事件
-			this.rtBtn.onclick = function(){
-				this.indexA ++;
-				if(this.indexA == this.num){
-					this.indexA = 0;
-				}
-				this.slide();
-			}.bind(this);
+			
 			//给小圆点添加移入事件
 			for(let i = 0;i < this.num;i ++){
 				this.oOllis[i].onmouseenter = function(){
@@ -109,10 +89,7 @@ function Slider(id) {
 				}.bind(this);
 			}
 		}
-		//获取左按钮
-		this.ltBtn = $('ltBtn');
-		//获取右按钮
-		this.rtBtn = $('rtBtn');
+		
 		this.addEvent(); //调用添加事件的方法
 		//计时器返回值
 		this.timer = null;

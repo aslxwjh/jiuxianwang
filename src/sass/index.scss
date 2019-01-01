@@ -35,7 +35,7 @@
 //
 ////函数
 @import 'public';
-body,p,h3,ul,input,ol{ margin: 0; padding: 0;};
+body,p,h3,ul,input,ol,dl,dt,dd{ margin: 0; padding: 0;};
 li{list-style: none;}
 a{text-decoration: none;}
 img{display: block;}
@@ -49,6 +49,9 @@ img{display: block;}
         width: 1200px;
         //margin: 0 auto;           
         .topHeaderLeft{
+            .clearfix{
+                margin-left: 30px;
+            }
             font-size: $fontSize;
             
             p{
@@ -168,6 +171,104 @@ img{display: block;}
 //bigBanner
 .bigBanner{
     
+    position: relative;
+    .secNav{
+        width: 190px;
+        height: 468px;
+        //border: 1px solid red;
+        position: absolute;
+         z-index: 1;
+         left: 31px;
+         top: 34px;
+          
+         ul{
+             background: white;
+             li{
+                 width: 188px;
+                 height: 80px;
+                 //border: 1px solid blue;
+                 padding-left: 13px;
+                 box-sizing: border-box;
+                h3{
+                    font-weight: 200;
+                    display: flex;
+                    height: 38px;
+                    div{
+                      width: 14px;
+                      height: 20px;
+                     // border: 1px solid red;
+                      
+                    }
+                }
+                .details-a{
+                    height: 40px;
+                    .details-au{
+                        height: 40px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-around;
+                        a{
+                            font-size: $fontSize;
+                            color: #666a6b; 
+                            
+                        }
+                        a:first-child{
+                            background: orange;
+                            color: white;
+                            padding: 0 3px;
+                            -webkit-border-radius: 4px;
+                            -moz-border-radius: 4px;
+                        }
+                    }
+                }     
+                
+             }
+         }
+      }
+        #secNavsec{
+            
+            display: none;
+            
+            div{
+                display: none;
+               // border: 1px solid red;
+                width: 650px;
+                height: 468px;
+                position: absolute;
+                z-index: 1;
+                left: 220px;
+                top: 34px;
+                }
+                #secNavsec1{
+                    background: black;
+                    font-size: 25px;
+                    
+                   
+                } 
+                #secNavsec2{
+                    background: orchid;
+                    
+                }#secNavsec3{
+                    background: yellow;
+                    
+                }#secNavsec4{
+                    background: green;
+                   
+                }#secNavsec5{
+                    background: skyblue;
+                    
+                }#secNavsec6{
+                    background: orange;
+                   
+                } 
+                
+            
+                         
+        }
+        
+        
+        
+        
     .bigBannerTop{
         height: 34px;
         background: #990100;
@@ -183,12 +284,15 @@ img{display: block;}
             margin: 0 32px;
             .bigBannerNav-L{
          //       border: 1px solid green;
+                
                 float: left;
                 width: 190px;
                 height: 34px;
                 background: red;
+                
             }
             .bigBannerNav-C{
+                
                 width: 860px;
                 height: 34px;
                 float: left;
@@ -197,6 +301,9 @@ img{display: block;}
                     li{
                         padding: 0 22px;
                         float: left;
+                        a{
+                           color: white; 
+                        }
                     }
                 }
             }
@@ -270,11 +377,14 @@ img{display: block;}
 
 //酒类详情
 .particular{
+    margin-left: 31px;
     margin-top: 10px;
     height: 500px;
     border: 1px solid red;
+    display: flex;
+    
     .particularLeft{
-        width: 920px;
+        width: 920px;//改920
         height: 498px;
         border: 1px solid blue;
         .particularLeft-top{
@@ -301,6 +411,204 @@ img{display: block;}
                 }
             }
         }
-    }
-    
+        .particularLeft-body{
+            div{ 
+                position: relative;
+                top: 0;
+                left: 0;           
+                margin-top: 16px;
+                display: inline-flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: space-between;
+                dl{
+                    width: 160px;
+                    height: 220px;
+                    //border: 1px solid red;
+                    dt{
+                        img{
+                            width: 160px;
+                            height: 160px;
+                        }
+                    }
+                    dd{
+                        font-size: 11px;
+                        width: 168px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    span{
+                        font-size: 11px;
+                        color: red;
+                        text-indent: 4px;
+                    }
+                }
+            }
+            
+        }
+    } 
+    .particularRight{
+        display: flex;
+        flex-flow:  column nowrap;
+        justify-content: space-between;
+        margin-left: 10px;
+        width: 269px;
+        height: 498px;
+        border: 1px solid yellow;
+        .particularRight-top{
+            height: 140px;
+            width: 269px;
+            border: 1px solid gray;
+            //border: 1px solid skyblue;
+            .particularRight-top-t{
+                margin-bottom: 7px;
+                height: 34px;
+                ul{
+                    li{
+                    line-height: 34px;
+                   // border: 1px solid green;
+                    width: 134px;
+                    height: 34px;
+                    text-align: center;
+                    color: #626461;
+                    float: left;
+                    background: #f9f9f9;
+                    font-size: 15px;
+                    border-top: 2px solid #ededed;
+                    border-right: 1px solid #ededed;
+                    }
+                    li:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+            .particularRight-top-b{
+                
+                display: flex;
+                justify-content: space-around;
+                
+                padding: 16px;
+                ul{
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-content: space-around;
+                    height: 68px;
+                    width: 106px;
+                   li{
+                     
+                    font-size: 11px;
+                    width: 106px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    } 
+                }
+                
+            }
+        }
+        .particularRight-center{
+            
+            height: 157px;
+            position: relative;
+           // border: 1px solid green;
+                 
+ 
+            ul {
+                li{
+                    height: 157px;
+                    a{
+                        display: block;
+                    }
+                }
+            }
+
+            ol{
+                position: absolute;
+                bottom: 10px;
+                left: 20%;
+                -webkit-transform: translateX(-50%);
+                background: rgba(255,255,255,.6);
+                border-radius: 7px;
+                padding: 3px;
+                z-index: 2;
+            }
+            ol li{
+                background: red;
+                float: left;
+                width: 8px;
+                height: 8px;
+                margin-left: 5px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                margin-right: 7px;
+            }
+            span{
+                width: 30px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 40px;
+                color: white;
+                background: rgba(255,255,255,.3);
+                cursor: pointer;
+                position: absolute;
+                font-weight: bold;
+                top: 50%;
+                left: 0;
+                -webkit-transform: translateY(-50%);
+                -moz-transform:translateY(-50%);
+                -webkit-transition: all 1s ease 0s;
+            }
+        }
+        .particularRight-bottom{
+            position: relative;
+            height: 160px;
+            border: 1px solid orange;
+            ul{
+                li{
+                    height: 165px;
+                   a{
+                       display: block;
+                   }
+                }
+            }
+            ol{
+                position: absolute;
+                bottom: 10px;
+                left: 20%;
+                -webkit-transform: translateX(-50%);
+                background: rgba(255,255,255,.6);
+                border-radius: 7px;
+                padding: 3px;
+                z-index: 2;
+            }
+            ol li{
+                background: red;
+                float: left;
+                width: 8px;
+                height: 8px;
+                margin-left: 5px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                margin-right: 7px;
+            }
+            span{
+                width: 30px;
+                height: 45px;
+                line-height: 45px;
+                font-size: 40px;
+                color: white;
+                background: rgba(255,255,255,.3);
+                cursor: pointer;
+                position: absolute;
+                font-weight: bold;
+                top: 50%;
+                left: 0;
+                -webkit-transform: translateY(-50%);
+                -moz-transform:translateY(-50%);
+                -webkit-transition: all 1s ease 0s;
+            }
+            
+        }
+    } 
 }

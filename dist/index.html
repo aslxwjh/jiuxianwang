@@ -4,22 +4,33 @@
 		<meta charset="UTF-8">
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/index.min.css"/>
-		<link rel="stylesheet" type="text/css" href=""/>
+		
 		
 	</head>
-	
+			
 	<body>
+		
+		<div id="box">
+			
+		</div>
+		
+			
+		<script src="../modulejs/js/cookie.js"></script>
+		<script src="../modulejs/js/index.js"></script>
+		 
+		
+		
 		<!--第一行-->
-		<div id = 'topHeader'>
+		<div id = 'topHeader'> 
 			<div class="topHeaderCon">
 				<div class ='topHeaderLeft'>
 					<div class="clearfix"><p class="greeting">欢迎来酒仙网！</p>
-						<a class="headerLogin" href="#" rel="login">请登录</a>
-						<a class="headerReg" href="#" rel="register">免费注册</a>
+						<a id = "login"class="headerLogin" href="#" rel="login">请登录</a>
+						<a id = "registor"class="headerReg" href="#" rel="registor">免费注册</a>
 					</div>
 				</div>
 				<div class ='topHeaderRight'>
-					<ul>
+					<ul> 
 						<li><a href="#">我的酒仙</a></li>
 						<li><a href="#">CEO邮箱</a></li>
 						<li><a href="#">购物车</a></li>
@@ -72,22 +83,93 @@
 		</div>
 		<!--第四行-->
 		<div class="bigBanner">
+			<div class="secNav" id="secNav">
+				<ul>
+					<li>
+						<h3>
+							<div style="background: url(images/sprite.png) 43% 78%;"></div>一键选酒
+						</h3>
+						<div class="details-a">
+							<div class="details-au">
+								<a href="#" class="details-au-l1">整箱购</a>
+								<a href="#">年份老酒</a>
+								<a href="#">家乡名酒</a>
+								<a href="#">地域名酒</a>
+								<a href="#">实惠大坛</a>
+								<a href="#">值得买</a>
+							</div>
+						</div>
+						
+					</li>
+					<li>
+						<h3><div></div>白酒</h3>
+						<div></div>
+						
+					</li>
+					<li>
+						<h3><div></div>葡萄酒</h3>
+						<div></div>
+						
+					</li>
+					<li>
+						<h3><div></div>洋酒</h3>
+						<div></div>
+						
+					</li>
+					<li>
+						<h3><div></div>啤酒/黄酒/养生酒</h3>
+						<div></div>
+						
+					</li>
+					<li>
+						<h3><div></div>食尚</h3>
+						<div></div>
+						
+					</li>
+				</ul>	
+			</div>
+			
+<!--二级菜单-->
+			<div class="secNav-sec" id="secNavsec">
+				<!--<ul>
+					<li>secNavsec1</li>
+					<li>secNavsec2</li>
+					<li>secNavsec3</li>
+					<li>secNavsec4</li>
+					<li>secNavsec5</li>
+					<li>secNavsec6</li>
+				</ul>-->
+				<div id="secNavsec1">
+					<a href="list.html">进入列表页</a>
+				</div>
+				<div id="secNavsec2"></div>
+				<div id="secNavsec3"></div>
+				<div id="secNavsec4"></div>
+				<div id="secNavsec5"></div>
+				<div id="secNavsec6"></div>				
+			</div>
+			
+			
 			<div class="bigBannerTop">
 				<div class="bigBannerNav">
 					<div class="bigBannerNav-L">
 						<p>全部商品分类</p>
+						
+						
+						
+						
 					</div>
 					<div class="bigBannerNav-C">
 						<ul>
-							<li>首页</li>
-							<li>领券中心</li>
-							<li>值得买</li>
-							<li>葡萄酒馆</li>
-							<li>洋酒馆</li>
-							<li>酒仙甄选</li>
-							<li>清仓</li>
-							<li>新品</li>
-							<li>CLUB试用</li>
+							<li><a href="">首页</a></li>
+							<li><a href="">领券中心</a></li>
+							<li><a href="">值得买</a></li>
+							<li><a href="">葡萄酒馆</a></li>
+							<li><a href="">洋酒馆</a></li>
+							<li><a href="">酒仙甄选</a></li>
+							<li><a href="">清仓</a></li>
+							<li><a href="">新品</a></li>
+							<li><a href="">CLUB试用</a></li>
 						</ul>
 					</div>
 					<div class="bigBannerNav-R">
@@ -110,7 +192,7 @@
 				
 			</div>
 		</div>
-		<script src="../module/js/jsES5.js"></script>
+		<script src="../modulejs/js/jsES5.js"></script>
 <!--酒类详情，鼠标经过的轮播-->
 		
 		<div class="particular">
@@ -125,19 +207,129 @@
 					</ul>
 				</div>
 				<div class="particularLeft-body">
-					<div class="">
+					<div class="particularLeft-body-fir">
+						<dl>
+							<dt><img src="images/d1.jpg"/></dt>
+							<dd>53°贵州茅台镇国酱酒500ml</dd>
+							<span>￥49.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d2.jpg"/></dt>						
+							<dd>【礼盒】50°洋河炫彩480ml*4</dd>
+							<span>￥949.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d3.jpg"/></dt>						
+							<dd>【酒厂直营】50°古井贡酒老玻贡750ml（6瓶装）</dd>
+							<span>￥368.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d4.jpg"/></dt>						
+							<dd>中国长城盛藏3年解百纳干红葡萄酒酒750ml（6瓶装）</dd>
+							<span>￥258.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d5.jpg"/></dt>						
+							<dd>法国2016拉菲珍藏波尔多红葡萄酒750ml（6瓶装）</dd>
+							<span>￥419.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d6.jpg"/></dt>						
+							<dd>52°酒鬼原浆酒500ml</dd>
+							<span>￥239.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d7.jpg"/></dt>						
+							<dd>52°泸州老窖三人炫1000ml*4+52°泸州老窖三人炫100ml*2+手提袋*2</dd>
+							<span>￥512.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d8.jpg"/></dt>						
+							<dd>法国（原装原瓶进口）雄鹿伯爵干红葡萄酒750ml（6瓶装）</dd>
+							<span>￥299.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d9.jpg"/></dt>						
+							<dd>法国（原装原瓶进口）雄鹿伯爵干红葡萄酒750ml（6瓶装）</dd>
+							<span>￥199.00</span>
+						</dl>
+						<dl>
+							<dt><img src="images/d10.jpg"/></dt>						
+							<dd>智利整箱红酒智利干露.克拉克干红葡萄酒750ml（6瓶装）</dd>
+							<span>￥199.00</span>
+						</dl>
+					</div>
+					<div class="particularLeft-body-sec">
+						
+					</div>
+					<div class="particularLeft-body-thr">
+						
+					</div>
+					<div class="particularLeft-body-for">
+						
+					</div>
+					<div class="particularLeft-body-fif">
+						
+					</div>
+					<div class="particularLeft-body-six">
 						
 					</div>
 				</div>
 			</div>
 			<div class="particularRight">
+				<div class="particularRight-top">
+					<div class="particularRight-top-t">
+						<ul>
+						<li>公告信息</li>
+						<li>促销信息</li>
+					</ul>
+					</div>
+					<div class="particularRight-top-b">
+						<!--<p>酒仙会员金币权利更新</p>
+						<p>2018年酒仙年度好酒友微故事</p>
+						<p>低度酒水部分地区停运公告2018</p>
+						<p>11.11多情红洋会场中奖名单</p>
+						<p>汾酒封藏大典获奖信息公布</p>
+						<p>99礼酒会场中奖名单</p>-->
+						<ul>
+							<li>酒仙会员金币权利更新</li>
+							<li>2018年酒仙年度好酒友微故事</li>
+							<li>低度酒水部分地区停运公告2018</li>
+						</ul>
+						<ul>
+							<li>11.11多情红洋会场中奖名单</li>
+							<li>汾酒封藏大典获奖信息公布</li>
+							<li>99礼酒会场中奖名单</li>
+						</ul>
+					</div>
+					
+				</div>
+				<div class="particularRight-center" id="particularRight-center">
+					<ul>
+						<li style="background: url(images/s1.jpg) no-repeat center 0 ;"><a href="#"></a></li>
+						<li style="background: url(images/s2.jpg) no-repeat center 0 ;"><a href="#"></a></li>
+						<li style="background: url(images/s3.jpg) no-repeat center 0 ;"><a href="#"></a></li>
+					</ul>
+				</div>
+				
+				<div class="particularRight-bottom" id="particularRight-bottom">
+					 <ul>
+						<li style="background: url(images/s4.jpg) no-repeat center 0 ;"><a href="#"></a></li>
+						<li style="background: url(images/s5.png) no-repeat center 0 ;"><a href="#"></a></li>
+						<li style="background: url(images/s4.jpg) no-repeat center 0 ;"><a href="#"></a></li>
+					</ul>
+				</div>
+				<script src="../modulejs/js/s3.js"></script>
 				
 			</div>
-		</div>
+	
+			
 		
-		<div id="">
-			<input type="button" name="" id="" value="" />
-		</div>		
+		
+		
+		
+		<script type="text/javascript" src="../modulejs/js/jquery-1.11.3.js"></script>	
+		<script src="../modulejs/js/secNav.js"></script>
 	<script type="text/javascript" src="main.js"></script></body>
 </html>
 

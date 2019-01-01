@@ -2,12 +2,8 @@ var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	entry :{
-			index:"./module/js/index.js",
-			login:"./module/js/login.js",
-			register:'./module/js/register.js',
-			list:'./module/js/register.js',
-			details:'./module/js/details.js',
-			cart:'./module/js/cart.js',			
+			index:"./src/gulpjs/index.min.js",			
+			
 	},
 			
 	output : {
@@ -22,8 +18,8 @@ module.exports = {
 			template : './src/html/login.html',
 			filename:'login.html'}),
 		new HtmlWebpackPlugin({
-			template : './src/html/register.html',
-			filename:'register.html'}),
+			template : './src/html/registor.html',
+			filename:'registor.html'}),
 		new HtmlWebpackPlugin({
 			template : './src/html/list.html',
 			filename:'list.html'}),

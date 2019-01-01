@@ -25,6 +25,7 @@
 	
 */
 
+
 new Slider("bigBannerBody");
 
 function Slider(id) {
@@ -44,7 +45,7 @@ function Slider(id) {
 			for(let i = 0;i < this.num;i ++){
 				let li = $create('li');
 				ol.appendChild(li);
-				li.innerHTML=i+1;
+				li.innerHTML= i + 1;
 				arr.push(li);
 			}
 			this.ele.appendChild(ol);

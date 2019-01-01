@@ -9,7 +9,10 @@
   "author": "wjh",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
     "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-imagemin": "^5.0.3",
