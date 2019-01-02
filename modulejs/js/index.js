@@ -8,7 +8,5 @@ if(cookieStr){
 		oDiv.innerHTML = '<p><a href="login.html">你好，请登录</a> <a href="registor.html">免费注册</a>'
 	}
 }else{
-	oDiv.innerHTML = '<p><a href="login.html">你好，请登录</a> <a href="registor.html">免费注册</a>'
-	
-	
+	oDiv.innerHTML = '<p><a href="login.html">你好，请登录</a> <a href="registor.html">免费注册</a>'	
 }

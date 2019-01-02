@@ -1,0 +1,18 @@
+.hide {
+				display: none;
+			}
+			.show {
+				display: block;
+			}
+			.normal {
+				color: black;
+				background: #ddd;
+				border: 1px solid #abcdef;
+				border-bottom: 0;
+			}
+			.hover {
+				color: #fff;
+				background: #abcdef;
+				border: 1px solid #abcdef;
+				border-bottom: 0;
+			}

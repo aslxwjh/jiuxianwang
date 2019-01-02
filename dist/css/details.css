@@ -1,0 +1,26 @@
+ #btn_l{
+                position: absolute;
+                background: url(../images/btn.gif) no-repeat;
+                height: 60px;
+                width: 60px;
+                left: 10px;
+                top: 130px;
+                
+                opacity: 50;
+                filter: alpha(opacity=0.5);
+                z-index: 1000;
+            }
+            #btn_r{
+                position: absolute;
+                background: url(../images/btn.gif) no-repeat 0 -60px;
+                height: 60px;
+                width: 60px;
+                right: 10px;
+                top: 130px;
+               
+                opacity: 50;               
+                filter: alpha(opacity=0.5);
+                 z-index: 1000;
+            }
+    
+    
