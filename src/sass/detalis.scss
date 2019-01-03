@@ -149,7 +149,7 @@ img{display: block;}
 
 .mininav{
     height: 45px;
-    border: 1px solid red;
+    //border: 1px solid red;
 }
 
 
@@ -158,14 +158,14 @@ img{display: block;}
     display: flex;
     justify-content: space-between;
     height: 566px;
-    border: 1px solid red;
+    //border: 1px solid red;
     .ImagingLeft{
         width:438px;
         height: 566px;
-        border: 1px solid blue;
+       // border: 1px solid blue;
         .ImagingBigPic{
            // height: 438px;
-            border: 1px solid dodgerblue;
+           // border: 1px solid dodgerblue;
         }
         .ImagingSmallPic{
            // height: 85px;
@@ -175,12 +175,49 @@ img{display: block;}
     .ImagingCenter{
         width: 550px;
         height: 566px;
-        border: 1px solid green;
+       // border: 1px solid green;
+        .comName{
+            h1{
+                font-size: 17px;
+            }
+            p{
+                font-size: $fontSize;
+                color: red;
+            }
+        }
+        .priceBox{
+            width: 546px;
+            height: 148px;
+            background: #fafafa;
+            .priceBe{
+                display: flex;
+                justify-content: space-between;
+                height: 42px;
+            
+                .infoTit{
+                    font-size: $fontSize;
+                }
+                .infoPrijx{
+                    
+                    del{
+                        font-size: 20px;
+                        font-weight: 800;
+                        }
+                    }
+           
+            }
+        }
+        
+        
     }
+    
+    
+    
+    
     .ImagingRight{
         width: 186px;
         height: 566px;
-        border: 1px solid yellow;
+       // border: 1px solid yellow;
     }
             #left{
                 position: absolute;
@@ -226,25 +263,7 @@ img{display: block;}
     
 }
 
-.ImagingCenter{
-    .conName{
-        
-    
-        h1{
-            font-size: 17px;
-        }
-        p{
-            font-size: 14px;
-            color: red;
-        }
-    }
-    
-    .infoWrap{
-        font-size: $fontSize;
-    }
-    
-    
-}
+
 
 
 
@@ -258,7 +277,7 @@ img{display: block;}
                
                 height: 426px;
                 overflow: hidden;
-                border: 1px solid yellow;
+                //border: 1px solid yellow;
             }
             #bigTop{
                 position: relative;
